@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Code Quest - Learn Coding</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <h1>Code Quest</h1>
+        <p>Learn Coding Step by Step</p>
+    </header>
+
+    <!-- Login and Signup Section -->
+    <main id="authSection">
+        <div class="auth-box">
+            <h2 id="authTitle">Login</h2>
+            <p id="authMessage">Welcome back! Login to continue learning.</p>
+
+            <form id="authForm">
+                <div id="nameField" class="hidden">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name"
+                           placeholder="Enter your name" maxlength="100">
+                </div>
+
+                <label for="email">Email Address</label>
+                <input type="email" id="email"
+                       placeholder="Enter your email" required>
+
+                <label for="password">Password</label>
+                <input type="password" id="password"
+                       placeholder="Enter your password"
+                       minlength="8" required>
+
+                <button type="submit" id="authButton">Login</button>
+            </form>
+
+            <p id="authResult" role="status"></p>
+
+            <p id="switchText">
+                Don't have an account?
+                <button type="button" class="text-button" id="switchAuth">
+                    Sign Up
+                </button>
+            </p>
+        </div>
+    </main>
+
+    <!-- Main Website -->
+    <main id="appSection" class="hidden">
+        <div class="welcome">
+            <div>
+                <h2 id="welcomeText">Welcome to Code Quest!</h2>
+                <p>Choose a language and start learning.</p>
+            </div>
+            <button type="button" id="logoutButton" class="logout">
+                Logout
+            </button>
+        </div>
+
+        <section>
+            <h2>Choose Your Language</h2>
+            <div class="cards">
+                <div class="card">
+                    <h3>Python</h3>
+                    <p>Learn Python programming from the basics.</p>
+                    <button type="button" class="languageButton"
+                            data-language="Python">Learn Python</button>
+                </div>
+
+                <div class="card">
+                    <h3>C++</h3>
+                    <p>Learn C++ programming from the basics.</p>
+                    <button type="button" class="languageButton"
+                            data-language="C++">Learn C++</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="lessonSection">
+            <h2 id="lessonHeading">Lessons</h2>
+            <div id="topicList" class="cards"></div>
+            <div id="lessonContent" class="lesson">
+                Select Python or C++ to see lessons.
+            </div>
+        </section>
+
+        <section id="quizSection">
+            <h2>Quick Quiz</h2>
+            <p id="quizLanguage">Choose a language to start the quiz.</p>
+            <div id="quizContent"></div>
+            <button type="button" id="submitQuiz" hidden>
+                Submit Quiz
+            </button>
+            <p id="quizResult" role="status"></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>Code Quest | Learn • Practise • Improve</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

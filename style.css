@@ -1,0 +1,223 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f1f5f9;
+    color: #1e293b;
+}
+
+header {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+header h1 {
+    margin: 0 0 8px;
+}
+
+header p {
+    margin: 0;
+}
+
+main {
+    width: 90%;
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.hidden {
+    display: none !important;
+}
+
+/* Login and Signup */
+
+.auth-box {
+    background: white;
+    width: 100%;
+    max-width: 420px;
+    margin: 30px auto;
+    padding: 28px;
+    border-radius: 12px;
+    box-shadow: 0 4px 18px #00000012;
+}
+
+.auth-box h2 {
+    text-align: center;
+    color: #1d4ed8;
+}
+
+.auth-box > p {
+    text-align: center;
+}
+
+label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin-top: 7px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 15px;
+}
+
+input:focus {
+    outline: 2px solid #93c5fd;
+}
+
+button {
+    background: #2563eb;
+    color: white;
+    border: none;
+    padding: 12px 17px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 15px;
+}
+
+button:hover {
+    background: #1d4ed8;
+}
+
+#authButton {
+    width: 100%;
+}
+
+.text-button {
+    background: transparent;
+    color: #2563eb;
+    padding: 4px;
+}
+
+.text-button:hover {
+    background: #eff6ff;
+}
+
+#authResult {
+    color: #b91c1c;
+    overflow-wrap: anywhere;
+}
+
+/* Dashboard */
+
+.welcome {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    background: #dbeafe;
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.welcome h2 {
+    margin-top: 0;
+}
+
+.logout {
+    background: #dc2626;
+}
+
+.logout:hover {
+    background: #b91c1c;
+}
+
+section {
+    margin-top: 35px;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 18px;
+}
+
+.card {
+    background: white;
+    flex: 1 1 240px;
+    padding: 22px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #0000000d;
+}
+
+.card h3 {
+    color: #1d4ed8;
+}
+
+.lesson {
+    background: white;
+    padding: 22px;
+    margin-top: 20px;
+    border-radius: 10px;
+    line-height: 1.6;
+    overflow-wrap: anywhere;
+}
+
+.lesson pre {
+    background: #172033;
+    color: #f8fafc;
+    padding: 16px;
+    border-radius: 8px;
+    overflow-x: auto;
+}
+
+.topic-button {
+    display: block;
+    width: 100%;
+    text-align: left;
+}
+
+.question {
+    background: white;
+    padding: 18px;
+    margin-top: 15px;
+    border-radius: 8px;
+}
+
+.question label {
+    font-weight: normal;
+    margin-top: 12px;
+}
+
+.question input {
+    width: auto;
+    margin-right: 8px;
+}
+
+#quizResult {
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+    background: #172554;
+    color: white;
+    text-align: center;
+    padding: 18px;
+    margin-top: 40px;
+}
+
+@media (max-width: 600px) {
+    main {
+        width: 92%;
+    }
+
+    .auth-box {
+        padding: 20px;
+    }
+
+    .welcome {
+        align-items: flex-start;
+    }
+}
